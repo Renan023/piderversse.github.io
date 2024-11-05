@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Nathalia';
-    src: url(/assets/Fonte/Nathalia.ttf) format('Truetype');
+    src: url(../Fonte/Nathalia.ttf) format('Truetype');
 }
 
 @font-face {
     font-family: 'BackinBlack';
-    src: url(/assets/Fonte/Back\ to\ Black\ Demo.ttf) format('Truetype');
+    src: url(../Fonte/Back\ to\ Black\ Demo.ttf) format('Truetype');
 }
 
 :root{
@@ -27,7 +27,7 @@ html, body{
 body::before{
     content: "";
     position: fixed;
-    background-image: url(/assets/img/Gwen-Stacy-Ultimato.jpg);
+    background-image: url(../Img/Gwen-Stacy-Ultimato.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,7 +118,7 @@ body::before{
 }
 
 body#gwen-hovered::before{
-    background-image: url(/assets/img/gwenback2.jpg);
+    background-image: url(../Img/gwenback2.jpg);
     opacity: .69;
     transition: 1.5s ease-in-out;
 }

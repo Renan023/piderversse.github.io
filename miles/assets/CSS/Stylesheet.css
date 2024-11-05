@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Distant_Stroke';
-    src: url(/assets/Fonte/Distant_Stroke.otf) format('OpenType');
+    src: url(../Fonte/Distant_Stroke.otf) format('OpenType');
 }
 
 @font-face {
     font-family: 'BackinBlack';
-    src: url(/assets/Fonte/Back\ to\ Black\ Demo.ttf) format('Truetype');
+    src: url(../Fonte/Back\ to\ Black\ Demo.ttf) format('Truetype');
 }
 
 :root{
@@ -26,7 +26,7 @@ body{
 body::before{
     content: "";
     position: fixed;
-    background-image: url(/assets/img/milesback.jpg);
+    background-image: url(../Img/milesback.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -136,7 +136,7 @@ body::before{
 }
 
 body#miles-hovered::before {
-    background-image: url(/assets/img/8157053-clonesaga.jpg);
+    background-image: url(../Img/8157053-clonesaga.jpg);
     opacity: .6;
     transition: 2s ease-in-out;
 }

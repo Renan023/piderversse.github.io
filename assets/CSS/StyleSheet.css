@@ -286,8 +286,8 @@ body[id^="spider"] .s-card:not(.s-card--hovered){
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin: 0;
-    padding: 40%;
+    margin: auto; 
+    padding-right: 25%;
 }
 
 @media (max-width: 768px) {

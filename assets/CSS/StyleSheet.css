@@ -179,7 +179,9 @@ body[id^="spider"] .s-card:not(.s-card--hovered){
 .s-footer{
     width: 100%;
     height: auto;
-    position:absolute;
+    position:relative;
+    margin: 0;
+    padding: 15%;
     background: linear-gradient(
         to top left,
         black,

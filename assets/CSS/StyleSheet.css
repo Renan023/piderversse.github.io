@@ -96,7 +96,6 @@ body::before{
 #s-icon .s-icon_item img {
     position: absolute;
     width: 2.5rem;
-    
 }
 
 #s-char{
@@ -180,16 +179,19 @@ body[id^="spider"] .s-card:not(.s-card--hovered){
 .s-footer{
     width: 100%;
     height: auto;
-    position:relative;
+    position: relative;
     background: linear-gradient(
         to top left,
         black,
         gray,
         white
     );
-    opacity: .6;
+    opacity: 0.6;
     display: flex;
     flex-direction: row;
+    background-size: cover; /* Garantir que o fundo cubra toda a tela */
+    background-position: center; /* Alinhar o fundo */
+    background-attachment: fixed; /* Fazer o fundo ficar fixo durante o rolar */
 }
 
 .s-footer h2{
@@ -223,6 +225,11 @@ body[id^="spider"] .s-card:not(.s-card--hovered){
 
     .s-footer {
         flex-direction: column;
+        align-items: center;
+        background-size: cover; /* Garantir que o fundo cubra toda a tela em telas menores */
+        height: 100vh; /* Ajustar a altura para cobrir a tela inteira */
+        margin: 0;
+        padding: 0;
     }
 
     .s-footer h2, .s-footer h3 {
@@ -261,6 +268,7 @@ body[id^="spider"] .s-card:not(.s-card--hovered){
         height: 3rem;
     }
 }
+
 #player {
     width: 50%;
     height: 2.5rem;
@@ -282,6 +290,7 @@ body[id^="spider"] .s-card:not(.s-card--hovered){
         width: 8rem;
     }
 }
+
 .s-footer {
     display: flex;
     flex-direction: row;
@@ -296,8 +305,11 @@ body[id^="spider"] .s-card:not(.s-card--hovered){
     .s-footer {
         flex-direction: column;
         align-items: center;
+        background-size: cover; /* Garantir que o fundo cubra toda a tela em dispositivos móveis */
+        height: 100vh; /* Ajustar altura para cobrir toda a tela */
     }
 }
+
 body {
     font-size: 1rem;
 }
